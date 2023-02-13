@@ -43,6 +43,7 @@ public class Day11WorkshopApplication {
 			//provide debugging info for the code
 			logger.debug("argVal: " + argVal);
 			if (argVal.contains("--port=")){
+				//gets substring which starts from index position 7 (i.e. 4th index before end), end of string position
 				portNumber = argVal.substring(argVal.length() - 4, argVal.length());
 				logger.debug("portNumber: " + portNumber);
 			}
